@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            right: 0;
+            background-color: #cccc;
+            padding: 20px;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        nav{
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="dropdown">
+            <a href="">Services</a>
+            <div class="dropdown-menu">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur amet esse qui corrupti, fugit
+                    quos, odit perferendis harum aliquam accusamus accusantium. Rerum ipsum porro nulla voluptas
+                    quibusdam eaque dolorum doloremque.</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="">Services 2 </a>
+            <div class="dropdown-menu">
+                <p>2222 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur amet esse qui corrupti, fugit
+                    quos, odit perferendis harum aliquam accusamus accusantium. Rerum ipsum porro nulla voluptas
+                    quibusdam eaque dolorum doloremque.</p>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

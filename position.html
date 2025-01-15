@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+        }
+        .box{
+            width: 250px;
+            padding: 24px;
+            background-color: #ccc;
+            border-radius: 4px;
+            position: relative;
+            
+            /* z-index */
+
+        }
+
+        .box:nth-child(1){
+           
+            top: 0px;
+           
+        }
+        .box:nth-child(2){
+            top: -100px;
+            left: 100px;
+            background-color: black;
+            color: white;
+        }
+        .box:nth-child(2) span{
+            font-size: 12px;
+            background-color: red;
+            padding: 5px 10px;
+            display: inline-block;
+            border-radius: 4px;
+
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .box p{
+            margin: 0;
+        }
+
+        /* default position of elements is static */
+    </style>
+</head>
+<>
+    
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laudantium reprehenderit nostrum dignissimos consequuntur et dolorem excepturi exercitationem dolorum neque, similique laborum explicabo corrupti tenetur officiis nobis velit tempore sit!</p>
+    </div>
+    <div class="box">
+        <span>100$ Off</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laudantium reprehenderit nostrum dignissimos consequuntur et dolorem excepturi exercitationem dolorum neque, similique laborum explicabo corrupti tenetur officiis nobis velit tempore sit!</p>
+    </div>
+    <input>
+
+    
+</body>
+</html>

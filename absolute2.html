@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+
+        /* 
+        mobiles:
+        1. 320px
+        2. 480px
+        3. 560px
+        4. 768px
+
+        tabs:
+        1. 768px
+        2. 960px 
+        3. 1024px
+
+        medium desktop
+        1. 1024px
+        2. 1140px
+        3. 1280px
+        3.1 1320px
+        4. 1440px
+
+        large desktop
+        1. 1440px 
+        2. 1680px
+        3. 1920px
+
+        */
+        .container {
+            max-width: 1024px;
+            margin: auto;
+        }
+        .search{
+            display: flex;
+            border: 1px solid #ccc;
+            padding: 10px;
+            align-items: center;
+            border-radius: 4px;
+            width: 480px;
+
+            position: relative;
+        }
+        .search img{
+            height: 28px;
+            opacity: 0.5;
+
+            position: absolute;
+            right: 10px;
+        }
+        .search input{
+            border: 0;
+            height: 40px;
+            padding-left: 10px;
+            width: 100%;
+            padding-right: 32px;
+            
+        }
+        .search input:focus{
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis rerum consectetur ab alias unde, eos
+            magni delectus error voluptate molestias temporibus cum, assumenda repellendus ea illo tempore impedit sunt
+            voluptas!</p>
+        <div class="search">
+            <img src="seach-icon.png" alt="" />
+            <input type="text" placeholder="Search...">
+        </div>
+    </div>
+</body>
+
+</html>
